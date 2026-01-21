@@ -1,22 +1,218 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>GameHub Online - ????? ????? ??????</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub Online - Free HTML5 Games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #a29bfe;
+            --dark: #2d3436;
+            --light: #f9f9f9;
+            --accent: #fd79a8;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation -->
     <header>
-        <div class="container">
-            <h1>?? GameHub Online</h1>
-            <p>???? ??????? ??????? ????????</p>
-        </div>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">?? GameHub <span>Online</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#categories"><i class="fas fa-th-large"></i> Categories</a></li>
+                    <li><a href="games.html"><i class="fas fa-gamepad"></i> All Games</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
     </header>
-    
-    <div class="container">
-        <h2>??????! ?????? ??? ???????</h2>
-        <p>???? ????? ?????? ?????? ?? ?????? ????? ?? ???????.</p>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to GameHub Online</h1>
+                <p>The largest collection of free HTML5 games! Play instantly in your browser, no downloads or registration required.</p>
+                <a href="#categories" class="btn-primary">Start Playing <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="https://cdn-icons-png.flaticon.com/512/686/686589.png" alt="Gaming">
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Slot -->
+    <div class="container ad-container">
+        <div class="ad-slot">
+            <div class="ad-placeholder">
+                <p>Advertisement</p>
+                <p>728x90</p>
+            </div>
+        </div>
     </div>
+
+    <!-- Categories -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-gamepad"></i> Game Categories</h2>
+            <div class="categories-grid">
+                <a href="games.html?category=action" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3>Action & Adventure</h3>
+                    <p>Exciting action and adventure games</p>
+                </a>
+                <a href="games.html?category=puzzle" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Puzzle Games</h3>
+                    <p>Challenge your brain with puzzle games</p>
+                </a>
+                <a href="games.html?category=sports" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Sports</h3>
+                    <p>Various sports games</p>
+                </a>
+                <a href="games.html?category=racing" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Racing</h3>
+                    <p>Speed and challenge racing games</p>
+                </a>
+                <a href="games.html?category=strategy" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3>Strategy</h3>
+                    <p>Plan your moves carefully</p>
+                </a>
+                <a href="games.html?category=all" class="category-card view-all">
+                    <div class="category-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>View All Games</h3>
+                    <p>Browse all available games</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="featured-games">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-star"></i> Featured Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://img.itch.zone/aW1nLzEzODUzNDk5LnBuZw==/original/%2B%2Bh%2BP.png" alt="Car Racing Game">
+                        <div class="game-overlay">
+                            <a href="game.html?id=1" class="btn-play">Play Now <i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Fast Car Racing</h3>
+                        <div class="game-meta">
+                            <span class="game-category"><i class="fas fa-tag"></i> Racing</span>
+                            <span class="game-rating"><i class="fas fa-thumbs-up"></i> 95%</span>
+                        </div>
+                        <p>Challenge yourself in the fastest car race! Avoid obstacles and collect points.</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://img.itch.zone/aW1nLzEyNjQ2ODc5LnBuZw==/original/5y3n%2Bz.png" alt="Puzzle Game">
+                        <div class="game-overlay">
+                            <a href="game.html?id=2" class="btn-play">Play Now <i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Puzzle Challenge</h3>
+                        <div class="game-meta">
+                            <span class="game-category"><i class="fas fa-tag"></i> Puzzle</span>
+                            <span class="game-rating"><i class="fas fa-thumbs-up"></i> 89%</span>
+                        </div>
+                        <p>Test your intelligence with a collection of challenging puzzles.</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://img.itch.zone/aW1nLzEzMjM5MDY3LnBuZw==/original/fTzBeN.png" alt="Soccer Game">
+                        <div class="game-overlay">
+                            <a href="game.html?id=3" class="btn-play">Play Now <i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>World Soccer</h3>
+                        <div class="game-meta">
+                            <span class="game-category"><i class="fas fa-tag"></i> Sports</span>
+                            <span class="game-rating"><i class="fas fa-thumbs-up"></i> 92%</span>
+                        </div>
+                        <p>Become a soccer legend and score amazing goals!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Slot -->
+    <div class="container ad-container">
+        <div class="ad-slot">
+            <div class="ad-placeholder">
+                <p>Advertisement</p>
+                <p>728x90</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameHub Online</h3>
+                    <p>The largest free HTML5 gaming platform. Play instantly in your browser.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="games.html">All Games</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> support@gamehubonline.com</p>
+                    <p><i class="fas fa-globe"></i> www.gamehubonline.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 GameHub Online. All rights reserved.</p>
+                <p>This site uses cookies to improve user experience.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
